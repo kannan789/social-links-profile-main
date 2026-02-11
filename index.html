@@ -32,8 +32,32 @@
       
     }
 
+    .profile-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .profile-image {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     img {
       border-radius: 50%;
+    }
+
+    .profile-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30;
+      font-weight: bold;
+    }
+
+    .profile-loc {
+      color: hsl(75, 94%, 57%);
     }
 
     ul {
@@ -44,10 +68,10 @@
 </head>
 <body>
 <div class="container">
-  <div>
-    <div><img src="./assets/images/avatar-jessica.jpeg" width="50" height="50"></div>
-    <div>Jessica Randall</div>
-    <div>London, United Kingdom</div>
+  <div class="profile-details">
+    <div class="profile-image"><img src="./assets/images/avatar-jessica.jpeg" width="50" height="50"></div>
+    <div class="profile-name">Jessica Randall</div>
+    <div class="profile-loc">London, United Kingdom</div>
   </div>
 
   <div>
