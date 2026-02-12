@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social links profile</title>
@@ -16,6 +20,7 @@
       justify-content: center;
       height: 100vh;
       background-color: black;
+      font-family: "Figtree",sans-serif;
     
     }
 
@@ -26,7 +31,7 @@
       justify-content: center;
       width: 300px;
       height: 400px;
-      background-color: hsl(0, 0%, 20%);
+      background-color: hsl(0, 0%, 12%);
       color: hsl(0, 0%, 100%);
       border-radius: 20px;
       
@@ -60,8 +65,25 @@
       color: hsl(75, 94%, 57%);
     }
 
+    .profile-desc {
+      margin-top: 10px;
+    }
+
     ul {
       list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    li button {
+      width:  240px;
+      padding: 5px 0 5px 0;
+      border-radius: 5px;
+      background-color: hsl(0, 0%, 20%);
+      color:hsl(0, 0%, 100%);
+      font-size: 14px;
+      font-weight: 600;
     }
     
   </style>
@@ -74,17 +96,17 @@
     <div class="profile-loc">London, United Kingdom</div>
   </div>
 
-  <div>
+  <div class="profile-desc">
   "Front-end developer and avid reader."
   </div>
 
   <div>
     <ul>
-    <li>GitHub</li>
-    <li>Frontend Mentor</li>
-    <li>LinkedIn</li>
-    <li>Twitter</li>
-    <li>Instagram</li>
+    <li><button>GitHub</button></li>
+    <li><button>Frontend Mentor</button></li>
+    <li><button>LinkedIn</button></li>
+    <li><button>Twitter</button></li>
+    <li><button>Instagram</button></li>
   </ul>
   
   
